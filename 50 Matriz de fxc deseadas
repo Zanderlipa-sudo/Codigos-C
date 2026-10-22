@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int f, c, i, j, n[20], a;
+    printf("\nIngrese la cantidad de filas: "); scanf("%d", &f);
+    printf("\nIngrese la cantidad de columnas: "); scanf("%d", &c);
+    for(i=1;i<=f;i++){
+        for(j=1;j<=c;j++){
+            printf("\nIngrese el elemento[%d][%d]: ", i, j); scanf("%d", &n[a]);}}
+    printf("\nLa matriz es %d x %d\n", f, c);
+    for(i=1;i<=f;i++){
+        for(j=1;j<=c;j++)
+            printf("[%d]\t", n[a]);
+        printf("\n");}
+    return 0;
+}
