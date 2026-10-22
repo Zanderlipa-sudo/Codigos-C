@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int i=1, n;
+    char res;
+    printf("\nTabla de multiplicar");
+    do
+    {
+        printf("\nDe que numero quieres generar la tabla: "); scanf("%d", &n);   
+        for(i=1;i<=12;i++)
+        printf("%d x %d = %d\n", n, i, i*n);
+        printf("\nDesea imprimir otra tabla s/n: ");
+        scanf(" %c", &res);
+    } while (res == 's' || res == 'S');
+    return 0;
+}
