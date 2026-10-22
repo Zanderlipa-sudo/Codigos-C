@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+int i, n, nota[20], suma=0, promedio=0;
+    printf("\nIngrese la cantidad de notas: "); scanf("%d", &n);
+    for(i=1;i<=n;i++){
+        printf("\nIngrese la notas %d: ", i); scanf("%d", &nota[i]);
+        suma=suma+nota[i];
+        promedio=suma/n;}
+    printf("\nLas notas ingresadas son: ");
+    for(i=1;i<=n;i++)
+        printf("\nNota [%d]: %d", i, nota[i]);
+    printf("\nLa suma total es: %d", suma);
+    printf("\nEl promedio es: %d", promedio);
+    return 0;
+}
